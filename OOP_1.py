@@ -10,7 +10,6 @@ class Account(object):
 
     def withdraw(self, amount): 
         if(self.Balance - amount < -self.CreditLine):
-            # coverage insufficient
             return False  
         else: 
             self.Balance -= amount 
